@@ -1,9 +1,13 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
+    initialization-mode: always
+    password: admin
+    url: jdbc:mysql://localhost:3306/catalog?useSSL=false
+    username: root
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: update
     show-sql: true
     properties:
       hibernate:
